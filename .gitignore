@@ -29,6 +29,9 @@ GitHub_Upload_Guide.*
 *.bat
 launch_experiments.py
 
+# --- Blank model-card templates that PEFT writes next to every saved adapter ---
+results/*_lora_best/README.md
+
 # --- Debug output of a removed script ---
 results/debug_cot_responses.json
 
