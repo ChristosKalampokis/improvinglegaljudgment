@@ -1,0 +1,41 @@
+# Pinned to the exact versions used for the thesis experiments (July 2026).
+#
+# IMPORTANT: torch >= 2.6 is REQUIRED. transformers 5.x refuses to load
+# legacy pytorch_model.bin pickle checkpoints (CVE-2025-32434 mitigation)
+# on older torch, and both Legal-BERT models ship only .bin checkpoints.
+# Install torch with CUDA support:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu126
+
+# Core ML
+torch==2.12.1
+transformers==5.3.0
+datasets==4.3.0
+sentence-transformers==5.2.3
+
+# Fine-tuning (LoRA)
+peft==0.18.0
+accelerate==1.12.0
+
+# RAG retrieval
+faiss-cpu==1.13.2
+
+# Gemini cloud experiments (Vertex AI)
+# NOTE: the package is google-genai, NOT the older google-generativeai
+google-genai==1.66.0
+
+# Evaluation & visualization
+scikit-learn==1.7.1
+matplotlib==3.10.1
+seaborn==0.13.2
+
+# Utilities
+tqdm==4.67.1
+pandas==2.3.3
+numpy==1.26.4
+
+# Removed (declared in the original proposal but never used by the code):
+#   wandb              - experiment tracking is done via JSON files in results/
+#   langchain          - RAG pipeline is implemented directly with FAISS + SBERT
+#   openai             - Gemini (google-genai) is used for cloud inference instead
+#   bitsandbytes       - only needed for QLoRA 4-bit (finetune_lora.py --use_4bit),
+#                        which was not used in the reported experiments

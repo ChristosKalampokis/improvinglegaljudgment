@@ -1,0 +1,7 @@
+{
+  "model": "google/flan-t5-base",
+  "split": "test",
+  "zero_shot_accuracy": 0.5272222222222223,
+  "few_shot_accuracy": 0.5294444444444445,
+  "cot_accuracy": 0.5272222222222223
+}

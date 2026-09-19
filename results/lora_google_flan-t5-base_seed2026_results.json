@@ -1,0 +1,15 @@
+{
+  "model": "google/flan-t5-base",
+  "test_accuracy": 0.8536111111111111,
+  "best_val_accuracy": 0.8617948717948718,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "epochs": 3,
+  "batch_size": 4,
+  "lr": 0.0002,
+  "use_4bit": false,
+  "bf16": false,
+  "grad_accum": 1,
+  "gradient_checkpointing": false,
+  "seed": 2026
+}

@@ -1,0 +1,9 @@
+{
+  "llm_model": "google/flan-t5-base",
+  "sbert_model": "all-MiniLM-L6-v2",
+  "split": "test",
+  "k0_accuracy": 0.5272222222222223,
+  "k1_accuracy": 0.5347222222222222,
+  "k3_accuracy": 0.5388888888888889,
+  "k5_accuracy": 0.5372222222222223
+}

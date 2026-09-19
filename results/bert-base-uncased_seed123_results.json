@@ -1,0 +1,10 @@
+{
+  "model": "bert-base-uncased",
+  "test_accuracy": 0.7041666666666667,
+  "best_val_accuracy": 0.7217948717948718,
+  "epochs": 3,
+  "batch_size": 4,
+  "lr": 2e-05,
+  "max_length": 256,
+  "seed": 123
+}

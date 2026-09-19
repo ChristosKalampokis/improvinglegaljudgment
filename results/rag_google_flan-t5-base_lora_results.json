@@ -1,0 +1,11 @@
+{
+  "llm_model": "google/flan-t5-base",
+  "sbert_model": "all-MiniLM-L6-v2",
+  "split": "test",
+  "lora_adapter": "../results/google_flan-t5-base_lora_best",
+  "index_holdings": false,
+  "k0_accuracy": 0.8563888888888889,
+  "k1_accuracy": 0.8452777777777778,
+  "k3_accuracy": 0.8308333333333333,
+  "k5_accuracy": 0.8219444444444445
+}

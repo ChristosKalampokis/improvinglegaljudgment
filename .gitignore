@@ -1,0 +1,41 @@
+# --- Python / environments ---
+venv/
+__pycache__/
+*.pyc
+
+# --- Node tooling used only to generate the .docx guides ---
+node_modules/
+package.json
+package-lock.json
+create_code_doc.js
+create_execution_guide.js
+
+# --- Full fine-tuned encoder checkpoints (438-499 MB each, over GitHub's 100 MB limit) ---
+# The LoRA adapters in results/*_lora_best/ are small (7-19 MB) and ARE committed.
+*.pt
+*.bin
+
+# --- Run logs (large, machine-specific paths); results/*.json are the record ---
+logs/
+
+# --- Thesis drafts, LaTeX build files and Word round-trip copies ---
+thesis/
+GitHub_Upload_Guide.*
+
+# --- Word documents (guides, editable thesis copies): only code, README and results are published ---
+*.docx
+
+# --- Launchers tied to this PC (local credential paths) ---
+*.bat
+launch_experiments.py
+
+# --- Debug output of a removed script ---
+results/debug_cot_responses.json
+
+# --- Empty placeholder folders / OS files ---
+configs/
+data/
+notebooks/
+Thumbs.db
+desktop.ini
+.DS_Store

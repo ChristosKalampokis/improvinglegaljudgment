@@ -1,0 +1,80 @@
+{
+  "n_test": 3600,
+  "window_chars": 300,
+  "n_contrary": 48,
+  "n_supporting": 990,
+  "n_neither": 2562,
+  "cue_counts": {
+    "\\bbut see\\b": 40,
+    "\\bbut cf\\b": 4,
+    "\\bcontra\\b": 3,
+    "\\bcertif\\w*\\s+conflict\\b": 1
+  },
+  "models": {
+    "SBERT": {
+      "acc_contrary": 0.5625,
+      "acc_other": 0.5228,
+      "acc_supporting": 0.5354,
+      "acc_neither": 0.518,
+      "gap_contrary_minus_other": 0.0397,
+      "gap_broad": 0.0251,
+      "fisher_p": 0.663253561622939
+    },
+    "BERT": {
+      "acc_contrary": 0.625,
+      "acc_other": 0.7252,
+      "acc_supporting": 0.7444,
+      "acc_neither": 0.7178,
+      "gap_contrary_minus_other": -0.1002,
+      "gap_broad": -0.0537,
+      "fisher_p": 0.14262138700420862
+    },
+    "RoBERTa": {
+      "acc_contrary": 0.6042,
+      "acc_other": 0.7314,
+      "acc_supporting": 0.7455,
+      "acc_neither": 0.726,
+      "gap_contrary_minus_other": -0.1273,
+      "gap_broad": -0.0317,
+      "fisher_p": 0.0700035737135711
+    },
+    "Legal-BERT (custom)": {
+      "acc_contrary": 0.6875,
+      "acc_other": 0.7424,
+      "acc_supporting": 0.7697,
+      "acc_neither": 0.7319,
+      "gap_contrary_minus_other": -0.0549,
+      "gap_broad": 0.026,
+      "fisher_p": 0.4069826242142558
+    },
+    "Legal-BERT (nlpaueb)": {
+      "acc_contrary": 0.7083,
+      "acc_other": 0.7514,
+      "acc_supporting": 0.7667,
+      "acc_neither": 0.7455,
+      "gap_contrary_minus_other": -0.0431,
+      "gap_broad": 0.0306,
+      "fisher_p": 0.5025278696396434
+    },
+    "LoRA FLAN-T5": {
+      "acc_contrary": 0.8333,
+      "acc_other": 0.8525,
+      "acc_supporting": 0.8687,
+      "acc_neither": 0.8462,
+      "gap_contrary_minus_other": -0.0191,
+      "gap_broad": -0.0169,
+      "fisher_p": 0.6823709360164436
+    },
+    "LoRA FLAN-T5-large": {
+      "acc_contrary": 0.8542,
+      "acc_other": 0.8947,
+      "acc_supporting": 0.896,
+      "acc_neither": 0.8942,
+      "gap_contrary_minus_other": -0.0405,
+      "gap_broad": -0.0458,
+      "fisher_p": 0.34365835561768887
+    }
+  },
+  "n_contrary_broad": 73,
+  "n_trained_models_with_negative_gap": 6
+}

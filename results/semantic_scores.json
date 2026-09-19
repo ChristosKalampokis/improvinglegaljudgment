@@ -1,0 +1,40 @@
+{
+  "sbert_model": "all-MiniLM-L6-v2",
+  "n_samples": 3600,
+  "note": "Gemini 2.5 Flash/Pro are excluded: the API experiments stored only aggregate accuracies, not per-sample predictions, so the predicted holding text is unknown; recomputing would require re-running paid API calls.",
+  "SBERT": {
+    "accuracy": 0.5233,
+    "semantic_score_all": 0.8231,
+    "semantic_score_errors_only": 0.6288
+  },
+  "BERT": {
+    "accuracy": 0.7239,
+    "semantic_score_all": 0.9088,
+    "semantic_score_errors_only": 0.6697
+  },
+  "RoBERTa": {
+    "accuracy": 0.7297,
+    "semantic_score_all": 0.9109,
+    "semantic_score_errors_only": 0.6703
+  },
+  "Legal-BERT (custom)": {
+    "accuracy": 0.7417,
+    "semantic_score_all": 0.9167,
+    "semantic_score_errors_only": 0.6775
+  },
+  "Legal-BERT (nlpaueb)": {
+    "accuracy": 0.7508,
+    "semantic_score_all": 0.9189,
+    "semantic_score_errors_only": 0.6747
+  },
+  "LoRA FLAN-T5": {
+    "accuracy": 0.8522,
+    "semantic_score_all": 0.9503,
+    "semantic_score_errors_only": 0.6638
+  },
+  "LoRA FLAN-T5-large": {
+    "accuracy": 0.8942,
+    "semantic_score_all": 0.9654,
+    "semantic_score_errors_only": 0.6731
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "model": "nlpaueb/legal-bert-base-uncased",
+  "test_accuracy": 0.7508333333333334,
+  "best_val_accuracy": 0.7584615384615384,
+  "epochs": 3,
+  "batch_size": 4,
+  "lr": 2e-05,
+  "max_length": 256
+}

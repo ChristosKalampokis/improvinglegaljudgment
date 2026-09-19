@@ -1,0 +1,8 @@
+{
+  "llm_model": "google/flan-t5-base",
+  "sbert_model": "BAAI/bge-base-en-v1.5",
+  "split": "test",
+  "k1_accuracy": 0.5366666666666666,
+  "k3_accuracy": 0.5405555555555556,
+  "k5_accuracy": 0.5413888888888889
+}

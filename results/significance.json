@@ -1,0 +1,274 @@
+{
+  "n_samples": 3600,
+  "n_bootstrap": 10000,
+  "note": "Gemini models: normal-approximation CIs only; McNemar requires per-sample predictions, which the API runs did not retain.",
+  "bootstrap_ci_95": {
+    "SBERT": {
+      "accuracy": 0.5233,
+      "ci_low": 0.5069,
+      "ci_high": 0.5394
+    },
+    "BERT": {
+      "accuracy": 0.7239,
+      "ci_low": 0.7094,
+      "ci_high": 0.7383
+    },
+    "RoBERTa": {
+      "accuracy": 0.7297,
+      "ci_low": 0.715,
+      "ci_high": 0.7442
+    },
+    "Legal-BERT (custom)": {
+      "accuracy": 0.7417,
+      "ci_low": 0.7269,
+      "ci_high": 0.7561
+    },
+    "Legal-BERT (nlpaueb)": {
+      "accuracy": 0.7508,
+      "ci_low": 0.7369,
+      "ci_high": 0.765
+    },
+    "LoRA FLAN-T5": {
+      "accuracy": 0.8522,
+      "ci_low": 0.8406,
+      "ci_high": 0.8636
+    },
+    "LoRA FLAN-T5-large": {
+      "accuracy": 0.8942,
+      "ci_low": 0.8839,
+      "ci_high": 0.9042
+    }
+  },
+  "mcnemar": [
+    {
+      "model_a": "SBERT",
+      "model_b": "BERT",
+      "a_right_b_wrong": 252,
+      "b_right_a_wrong": 974,
+      "p_value": 1.9853650455489473e-100,
+      "significance": "***"
+    },
+    {
+      "model_a": "SBERT",
+      "model_b": "RoBERTa",
+      "a_right_b_wrong": 231,
+      "b_right_a_wrong": 974,
+      "p_value": 7.600612903089726e-109,
+      "significance": "***"
+    },
+    {
+      "model_a": "SBERT",
+      "model_b": "Legal-BERT (custom)",
+      "a_right_b_wrong": 233,
+      "b_right_a_wrong": 1019,
+      "p_value": 1.8318217755603166e-117,
+      "significance": "***"
+    },
+    {
+      "model_a": "SBERT",
+      "model_b": "Legal-BERT (nlpaueb)",
+      "a_right_b_wrong": 207,
+      "b_right_a_wrong": 1026,
+      "p_value": 1.0609963833548378e-130,
+      "significance": "***"
+    },
+    {
+      "model_a": "SBERT",
+      "model_b": "LoRA FLAN-T5",
+      "a_right_b_wrong": 120,
+      "b_right_a_wrong": 1304,
+      "p_value": 1.0734842950102847e-251,
+      "significance": "***"
+    },
+    {
+      "model_a": "SBERT",
+      "model_b": "LoRA FLAN-T5-large",
+      "a_right_b_wrong": 88,
+      "b_right_a_wrong": 1423,
+      "p_value": 7.198314481894e-311,
+      "significance": "***"
+    },
+    {
+      "model_a": "BERT",
+      "model_b": "RoBERTa",
+      "a_right_b_wrong": 238,
+      "b_right_a_wrong": 259,
+      "p_value": 0.3696693835091558,
+      "significance": "ns"
+    },
+    {
+      "model_a": "BERT",
+      "model_b": "Legal-BERT (custom)",
+      "a_right_b_wrong": 262,
+      "b_right_a_wrong": 326,
+      "p_value": 0.009316895466403954,
+      "significance": "**"
+    },
+    {
+      "model_a": "BERT",
+      "model_b": "Legal-BERT (nlpaueb)",
+      "a_right_b_wrong": 198,
+      "b_right_a_wrong": 295,
+      "p_value": 1.4461526355661968e-05,
+      "significance": "***"
+    },
+    {
+      "model_a": "BERT",
+      "model_b": "LoRA FLAN-T5",
+      "a_right_b_wrong": 166,
+      "b_right_a_wrong": 628,
+      "p_value": 5.731904012452156e-64,
+      "significance": "***"
+    },
+    {
+      "model_a": "BERT",
+      "model_b": "LoRA FLAN-T5-large",
+      "a_right_b_wrong": 115,
+      "b_right_a_wrong": 728,
+      "p_value": 1.1748645728822284e-109,
+      "significance": "***"
+    },
+    {
+      "model_a": "RoBERTa",
+      "model_b": "Legal-BERT (custom)",
+      "a_right_b_wrong": 261,
+      "b_right_a_wrong": 304,
+      "p_value": 0.07714336608137677,
+      "significance": "ns"
+    },
+    {
+      "model_a": "RoBERTa",
+      "model_b": "Legal-BERT (nlpaueb)",
+      "a_right_b_wrong": 202,
+      "b_right_a_wrong": 278,
+      "p_value": 0.0006042649867013793,
+      "significance": "***"
+    },
+    {
+      "model_a": "RoBERTa",
+      "model_b": "LoRA FLAN-T5",
+      "a_right_b_wrong": 170,
+      "b_right_a_wrong": 611,
+      "p_value": 3.8831232732283495e-59,
+      "significance": "***"
+    },
+    {
+      "model_a": "RoBERTa",
+      "model_b": "LoRA FLAN-T5-large",
+      "a_right_b_wrong": 122,
+      "b_right_a_wrong": 714,
+      "p_value": 1.5875789198594718e-102,
+      "significance": "***"
+    },
+    {
+      "model_a": "Legal-BERT (custom)",
+      "model_b": "Legal-BERT (nlpaueb)",
+      "a_right_b_wrong": 227,
+      "b_right_a_wrong": 260,
+      "p_value": 0.14696600234767143,
+      "significance": "ns"
+    },
+    {
+      "model_a": "Legal-BERT (custom)",
+      "model_b": "LoRA FLAN-T5",
+      "a_right_b_wrong": 205,
+      "b_right_a_wrong": 603,
+      "p_value": 3.1915832895178365e-46,
+      "significance": "***"
+    },
+    {
+      "model_a": "Legal-BERT (custom)",
+      "model_b": "LoRA FLAN-T5-large",
+      "a_right_b_wrong": 142,
+      "b_right_a_wrong": 691,
+      "p_value": 2.5155870957588456e-87,
+      "significance": "***"
+    },
+    {
+      "model_a": "Legal-BERT (nlpaueb)",
+      "model_b": "LoRA FLAN-T5",
+      "a_right_b_wrong": 191,
+      "b_right_a_wrong": 556,
+      "p_value": 3.706986616510898e-42,
+      "significance": "***"
+    },
+    {
+      "model_a": "Legal-BERT (nlpaueb)",
+      "model_b": "LoRA FLAN-T5-large",
+      "a_right_b_wrong": 134,
+      "b_right_a_wrong": 650,
+      "p_value": 4.8886761617387264e-82,
+      "significance": "***"
+    },
+    {
+      "model_a": "LoRA FLAN-T5",
+      "model_b": "LoRA FLAN-T5-large",
+      "a_right_b_wrong": 84,
+      "b_right_a_wrong": 235,
+      "p_value": 1.0837973082013363e-17,
+      "significance": "***"
+    }
+  ],
+  "gemini_normal_ci_95": {
+    "gemini-2.5-flash/zero_shot": {
+      "accuracy": 0.7664,
+      "ci_low": 0.7526,
+      "ci_high": 0.7802
+    },
+    "gemini-2.5-flash/few_shot": {
+      "accuracy": 0.6942,
+      "ci_low": 0.6791,
+      "ci_high": 0.7093
+    },
+    "gemini-2.5-flash/cot": {
+      "accuracy": 0.7803,
+      "ci_low": 0.7668,
+      "ci_high": 0.7938
+    },
+    "gemini-2.5-flash/rag_k1": {
+      "accuracy": 0.7808,
+      "ci_low": 0.7673,
+      "ci_high": 0.7943
+    },
+    "gemini-2.5-flash/rag_k3": {
+      "accuracy": 0.7833,
+      "ci_low": 0.7698,
+      "ci_high": 0.7968
+    },
+    "gemini-2.5-flash/rag_k5": {
+      "accuracy": 0.7806,
+      "ci_low": 0.7671,
+      "ci_high": 0.7941
+    },
+    "gemini-2.5-pro/zero_shot": {
+      "accuracy": 0.8044,
+      "ci_low": 0.7914,
+      "ci_high": 0.8174
+    },
+    "gemini-2.5-pro/few_shot": {
+      "accuracy": 0.795,
+      "ci_low": 0.7818,
+      "ci_high": 0.8082
+    },
+    "gemini-2.5-pro/rag_k1": {
+      "accuracy": 0.8203,
+      "ci_low": 0.8078,
+      "ci_high": 0.8328
+    },
+    "gemini-2.5-pro/rag_k3": {
+      "accuracy": 0.8322,
+      "ci_low": 0.82,
+      "ci_high": 0.8444
+    },
+    "gemini-2.5-pro/rag_k5": {
+      "accuracy": 0.8347,
+      "ci_low": 0.8226,
+      "ci_high": 0.8468
+    },
+    "gemini-2.5-pro/cot": {
+      "accuracy": 0.7667,
+      "ci_low": 0.7529,
+      "ci_high": 0.7805
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "note": "Gemini 2.5 Flash/Pro are excluded: the API experiments stored only the final predicted letter per sample, so no ranking over the five candidates exists; recomputing would require re-running paid API calls.",
+  "random_baseline": 0.4567,
+  "SBERT": 0.7052,
+  "BERT": 0.8385,
+  "RoBERTa": 0.843,
+  "Legal-BERT (custom)": 0.8507,
+  "Legal-BERT (nlpaueb)": 0.8564,
+  "LoRA FLAN-T5": 0.9131,
+  "LoRA FLAN-T5-large": 0.9397
+}

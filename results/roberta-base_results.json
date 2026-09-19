@@ -1,0 +1,9 @@
+{
+  "model": "roberta-base",
+  "test_accuracy": 0.7297222222222223,
+  "best_val_accuracy": 0.7512820512820513,
+  "epochs": 3,
+  "batch_size": 4,
+  "lr": 2e-05,
+  "max_length": 256
+}

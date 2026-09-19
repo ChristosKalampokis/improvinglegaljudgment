@@ -1,0 +1,9 @@
+{
+  "model": "casehold/custom-legalbert",
+  "test_accuracy": 0.7416666666666667,
+  "best_val_accuracy": 0.7617948717948718,
+  "epochs": 3,
+  "batch_size": 4,
+  "lr": 2e-05,
+  "max_length": 256
+}

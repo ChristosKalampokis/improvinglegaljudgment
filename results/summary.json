@@ -1,0 +1,282 @@
+{
+  "bert-base-uncased": {
+    "model": "bert-base-uncased",
+    "test_accuracy": 0.7238888888888889,
+    "best_val_accuracy": 0.7315384615384616,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256
+  },
+  "bert-base-uncased_seed123": {
+    "model": "bert-base-uncased",
+    "test_accuracy": 0.7041666666666667,
+    "best_val_accuracy": 0.7217948717948718,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 123
+  },
+  "bert-base-uncased_seed2026": {
+    "model": "bert-base-uncased",
+    "test_accuracy": 0.7122222222222222,
+    "best_val_accuracy": 0.7248717948717949,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 2026
+  },
+  "casehold_custom-legalbert": {
+    "model": "casehold/custom-legalbert",
+    "test_accuracy": 0.7416666666666667,
+    "best_val_accuracy": 0.7617948717948718,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256
+  },
+  "casehold_custom-legalbert_seed123": {
+    "model": "casehold/custom-legalbert",
+    "test_accuracy": 0.7508333333333334,
+    "best_val_accuracy": 0.7715384615384615,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 123
+  },
+  "casehold_custom-legalbert_seed2026": {
+    "model": "casehold/custom-legalbert",
+    "test_accuracy": 0.7558333333333334,
+    "best_val_accuracy": 0.7702564102564102,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 2026
+  },
+  "gemini_gemini_2.5_flash": {
+    "model": "gemini-2.5-flash",
+    "backend": "vertex_ai",
+    "max_samples": null,
+    "zero_shot_accuracy": 0.7664,
+    "few_shot_accuracy": 0.6942,
+    "cot_accuracy": 0.7803,
+    "rag_k1_accuracy": 0.7808,
+    "rag_k3_accuracy": 0.7833,
+    "rag_k5_accuracy": 0.7806
+  },
+  "gemini_gemini_2.5_pro": {
+    "model": "gemini-2.5-pro",
+    "backend": "vertex_ai",
+    "max_samples": null,
+    "zero_shot_accuracy": 0.8044,
+    "few_shot_accuracy": 0.795,
+    "rag_k1_accuracy": 0.8203,
+    "rag_k3_accuracy": 0.8322,
+    "rag_k5_accuracy": 0.8347,
+    "cot_accuracy": 0.7667
+  },
+  "lora_google_flan-t5-base": {
+    "model": "google/flan-t5-base",
+    "test_accuracy": 0.8522222222222222,
+    "best_val_accuracy": 0.86,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 0.0002,
+    "use_4bit": false
+  },
+  "lora_google_flan-t5-base_seed123": {
+    "model": "google/flan-t5-base",
+    "test_accuracy": 0.8583333333333333,
+    "best_val_accuracy": 0.8592307692307692,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 0.0002,
+    "use_4bit": false,
+    "bf16": false,
+    "grad_accum": 1,
+    "gradient_checkpointing": false,
+    "seed": 123
+  },
+  "lora_google_flan-t5-base_seed2026": {
+    "model": "google/flan-t5-base",
+    "test_accuracy": 0.8536111111111111,
+    "best_val_accuracy": 0.8617948717948718,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 0.0002,
+    "use_4bit": false,
+    "bf16": false,
+    "grad_accum": 1,
+    "gradient_checkpointing": false,
+    "seed": 2026
+  },
+  "lora_google_flan-t5-large": {
+    "model": "google/flan-t5-large",
+    "test_accuracy": 0.8936111111111111,
+    "best_val_accuracy": 0.9025641025641026,
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "epochs": 3,
+    "batch_size": 2,
+    "lr": 0.0002,
+    "use_4bit": false,
+    "bf16": true,
+    "grad_accum": 2,
+    "gradient_checkpointing": true
+  },
+  "nlpaueb_legal-bert-base-uncased": {
+    "model": "nlpaueb/legal-bert-base-uncased",
+    "test_accuracy": 0.7508333333333334,
+    "best_val_accuracy": 0.7584615384615384,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256
+  },
+  "nlpaueb_legal-bert-base-uncased_seed123": {
+    "model": "nlpaueb/legal-bert-base-uncased",
+    "test_accuracy": 0.7547222222222222,
+    "best_val_accuracy": 0.7610256410256411,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 123
+  },
+  "nlpaueb_legal-bert-base-uncased_seed2026": {
+    "model": "nlpaueb/legal-bert-base-uncased",
+    "test_accuracy": 0.7497222222222222,
+    "best_val_accuracy": 0.7541025641025642,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 2026
+  },
+  "prompt_google_flan-t5-base": {
+    "model": "google/flan-t5-base",
+    "split": "test",
+    "zero_shot_accuracy": 0.5272222222222223,
+    "few_shot_accuracy": 0.5294444444444445,
+    "cot_accuracy": 0.5272222222222223
+  },
+  "prompt_google_flan-t5-large": {
+    "model": "google/flan-t5-large",
+    "split": "test",
+    "zero_shot_accuracy": 0.6755555555555556,
+    "few_shot_accuracy": 0.665,
+    "cot_accuracy": 0.6769444444444445
+  },
+  "rag_google_flan-t5-base_holdix": {
+    "llm_model": "google/flan-t5-base",
+    "sbert_model": "all-MiniLM-L6-v2",
+    "split": "test",
+    "lora_adapter": null,
+    "index_holdings": true,
+    "k1_accuracy": 0.535,
+    "k3_accuracy": 0.5369444444444444,
+    "k5_accuracy": 0.5369444444444444
+  },
+  "rag_google_flan-t5-base_lora": {
+    "llm_model": "google/flan-t5-base",
+    "sbert_model": "all-MiniLM-L6-v2",
+    "split": "test",
+    "lora_adapter": "../results/google_flan-t5-base_lora_best",
+    "index_holdings": false,
+    "k0_accuracy": 0.8563888888888889,
+    "k1_accuracy": 0.8452777777777778,
+    "k3_accuracy": 0.8308333333333333,
+    "k5_accuracy": 0.8219444444444445
+  },
+  "rag_google_flan-t5-base": {
+    "llm_model": "google/flan-t5-base",
+    "sbert_model": "all-MiniLM-L6-v2",
+    "split": "test",
+    "k0_accuracy": 0.5272222222222223,
+    "k1_accuracy": 0.5347222222222222,
+    "k3_accuracy": 0.5388888888888889,
+    "k5_accuracy": 0.5372222222222223
+  },
+  "rag_google_flan-t5-base_retr_BAAI_bge-base-en-v1.5": {
+    "llm_model": "google/flan-t5-base",
+    "sbert_model": "BAAI/bge-base-en-v1.5",
+    "split": "test",
+    "k1_accuracy": 0.5366666666666666,
+    "k3_accuracy": 0.5405555555555556,
+    "k5_accuracy": 0.5413888888888889
+  },
+  "rag_google_flan-t5-base_retr_nlpaueb_legal-bert-base-uncased": {
+    "llm_model": "google/flan-t5-base",
+    "sbert_model": "nlpaueb/legal-bert-base-uncased",
+    "split": "test",
+    "k1_accuracy": 0.5286111111111111,
+    "k3_accuracy": 0.5427777777777778,
+    "k5_accuracy": 0.5447222222222222
+  },
+  "rag_google_flan-t5-large_lora": {
+    "llm_model": "google/flan-t5-large",
+    "sbert_model": "all-MiniLM-L6-v2",
+    "split": "test",
+    "lora_adapter": "../results/google_flan-t5-large_lora_best",
+    "index_holdings": false,
+    "k0_accuracy": 0.8988888888888888,
+    "k1_accuracy": 0.8911111111111111,
+    "k3_accuracy": 0.8805555555555555,
+    "k5_accuracy": 0.8755555555555555
+  },
+  "rag_google_flan-t5-large": {
+    "llm_model": "google/flan-t5-large",
+    "sbert_model": "all-MiniLM-L6-v2",
+    "split": "test",
+    "lora_adapter": null,
+    "index_holdings": false,
+    "k0_accuracy": 0.6755555555555556,
+    "k1_accuracy": 0.6777777777777778,
+    "k3_accuracy": 0.6747222222222222,
+    "k5_accuracy": 0.6711111111111111
+  },
+  "roberta-base": {
+    "model": "roberta-base",
+    "test_accuracy": 0.7297222222222223,
+    "best_val_accuracy": 0.7512820512820513,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256
+  },
+  "roberta-base_seed123": {
+    "model": "roberta-base",
+    "test_accuracy": 0.7272222222222222,
+    "best_val_accuracy": 0.75,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 123
+  },
+  "roberta-base_seed2026": {
+    "model": "roberta-base",
+    "test_accuracy": 0.7405555555555555,
+    "best_val_accuracy": 0.7602564102564102,
+    "epochs": 3,
+    "batch_size": 4,
+    "lr": 2e-05,
+    "max_length": 256,
+    "seed": 2026
+  },
+  "sbert": {
+    "model": "sbert-all-MiniLM-L6-v2",
+    "validation_accuracy": 0.5358974358974359,
+    "test_accuracy": 0.5233333333333333
+  }
+}

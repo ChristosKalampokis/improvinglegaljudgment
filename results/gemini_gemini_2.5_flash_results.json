@@ -1,0 +1,11 @@
+{
+  "model": "gemini-2.5-flash",
+  "backend": "vertex_ai",
+  "max_samples": null,
+  "zero_shot_accuracy": 0.7664,
+  "few_shot_accuracy": 0.6942,
+  "cot_accuracy": 0.7803,
+  "rag_k1_accuracy": 0.7808,
+  "rag_k3_accuracy": 0.7833,
+  "rag_k5_accuracy": 0.7806
+}
